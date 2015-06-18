@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C2E210DD1B273DF50077AC7A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E210DC1B273DF50077AC7A /* main.swift */; };
+		C2E210E41B273E700077AC7A /* Firebird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2E210E31B273E700077AC7A /* Firebird.framework */; };
+		C2E210E91B2896FC0077AC7A /* FbConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E210E81B2896FC0077AC7A /* FbConnection.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C2E210D71B273DF50077AC7A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C2E210D91B273DF50077AC7A /* FirebirdTest */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FirebirdTest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2E210DC1B273DF50077AC7A /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		C2E210E31B273E700077AC7A /* Firebird.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Firebird.framework; path = ../../../../Library/Frameworks/Firebird.framework; sourceTree = "<group>"; };
+		C2E210E51B2740900077AC7A /* FirebirdTest-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FirebirdTest-Bridging-Header.h"; sourceTree = "<group>"; };
+		C2E210E81B2896FC0077AC7A /* FbConnection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FbConnection.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C2E210D61B273DF50077AC7A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E210E41B273E700077AC7A /* Firebird.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C2E210D01B273DF50077AC7A = {
+			isa = PBXGroup;
+			children = (
+				C2E210E31B273E700077AC7A /* Firebird.framework */,
+				C2E210DB1B273DF50077AC7A /* FirebirdTest */,
+				C2E210DA1B273DF50077AC7A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C2E210DA1B273DF50077AC7A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C2E210D91B273DF50077AC7A /* FirebirdTest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C2E210DB1B273DF50077AC7A /* FirebirdTest */ = {
+			isa = PBXGroup;
+			children = (
+				C2E210DC1B273DF50077AC7A /* main.swift */,
+				C2E210E51B2740900077AC7A /* FirebirdTest-Bridging-Header.h */,
+				C2E210E81B2896FC0077AC7A /* FbConnection.swift */,
+			);
+			path = FirebirdTest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C2E210D81B273DF50077AC7A /* FirebirdTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C2E210E01B273DF50077AC7A /* Build configuration list for PBXNativeTarget "FirebirdTest" */;
+			buildPhases = (
+				C2E210D51B273DF50077AC7A /* Sources */,
+				C2E210D61B273DF50077AC7A /* Frameworks */,
+				C2E210D71B273DF50077AC7A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirebirdTest;
+			productName = FirebirdTest;
+			productReference = C2E210D91B273DF50077AC7A /* FirebirdTest */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C2E210D11B273DF50077AC7A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Stefc;
+				TargetAttributes = {
+					C2E210D81B273DF50077AC7A = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = C2E210D41B273DF50077AC7A /* Build configuration list for PBXProject "FirebirdTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C2E210D01B273DF50077AC7A;
+			productRefGroup = C2E210DA1B273DF50077AC7A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C2E210D81B273DF50077AC7A /* FirebirdTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C2E210D51B273DF50077AC7A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2E210DD1B273DF50077AC7A /* main.swift in Sources */,
+				C2E210E91B2896FC0077AC7A /* FbConnection.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		C2E210DE1B273DF50077AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2E210DF1B273DF50077AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C2E210E11B273DF50077AC7A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirebirdTest/FirebirdTest-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C2E210E21B273DF50077AC7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "FirebirdTest/FirebirdTest-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C2E210D41B273DF50077AC7A /* Build configuration list for PBXProject "FirebirdTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E210DE1B273DF50077AC7A /* Debug */,
+				C2E210DF1B273DF50077AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C2E210E01B273DF50077AC7A /* Build configuration list for PBXNativeTarget "FirebirdTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2E210E11B273DF50077AC7A /* Debug */,
+				C2E210E21B273DF50077AC7A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C2E210D11B273DF50077AC7A /* Project object */;
+}
