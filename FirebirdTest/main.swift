@@ -10,7 +10,7 @@ import Foundation
 
 
 let version = FirebirdConnection.clientVersion
-println("Hello,\(version.name) (\(version.major).\(version.minor)) World!")
+print("Hello,\(version.name) (\(version.major).\(version.minor)) World!")
 
 let dbExample = "/Library/Frameworks/Firebird.framework/Resources/examples/empbuild/employee.fdb"
 let username = "SYSDBA"

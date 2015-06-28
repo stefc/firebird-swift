@@ -19,14 +19,14 @@ func msgToString(status : UnsafeMutablePointer<UnsafePointer<CLong>>) -> String?
 	}
 	else
 	{
-		println(" fb_interpret returns : \(r)")
+		print(" fb_interpret returns : \(r)")
 	}
 	return nil
 }
 
 func removeZero( value : String) -> [CChar] {
 	var cstring = value.cStringUsingEncoding(NSASCIIStringEncoding)!
-	cstring.removeAtIndex(count(cstring)-1)
+	cstring.removeAtIndex(cstring.count-1)
 	return cstring
 }
 
@@ -63,7 +63,7 @@ class FirebirdConnection {
 			
 			var result = -1
 			
-			let ret = isc_database_info(&fStatus, &fHandle, CShort(count(dbp)), &dbp, CShort(count(data)), &data)
+			let ret = isc_database_info(&fStatus, &fHandle, CShort(dbp.count), &dbp, CShort(data.count), &data)
 			if ret != 0 {
 				return -1
 			}
@@ -94,23 +94,23 @@ class FirebirdConnection {
 		let user = removeZero(username)
 		let passw = removeZero(password)
 		
-		var dbp = [Int8(isc_dpb_version1), Int8(isc_dpb_user_name), Int8(count(user))] + user +
-					[Int8(isc_dpb_password), Int8(count(passw))] + passw
+		var dbp = [Int8(isc_dpb_version1), Int8(isc_dpb_user_name), Int8(user.count)] + user +
+					[Int8(isc_dpb_password), Int8(passw.count)] + passw
 		
 		var db = removeZero(database)
 		/*
 		isc_attach_database(<#UnsafeMutablePointer<ISC_STATUS>#>, <#Int16#>, <#UnsafePointer<ISC_SCHAR>#>, <#UnsafeMutablePointer<isc_db_handle>#>, <#Int16#>, <#UnsafePointer<ISC_SCHAR>#>)
 */
-		let ret = isc_attach_database(&fStatus, CShort(count(db)), &db, &fHandle, CShort(count(dbp)), &dbp)
+		let ret = isc_attach_database(&fStatus, CShort(db.count), &db, &fHandle, CShort(dbp.count), &dbp)
 		if ret != 0 {
 			if (fStatus[0] == 1) && (fStatus[1] != 0) {
-				var p = UnsafeMutablePointer<UnsafePointer<CLong>>(fStatus)
-				println(msgToString(p))
+				let p = UnsafeMutablePointer<UnsafePointer<CLong>>(fStatus)
+				print(msgToString(p))
 			}
 		}
 		
 		fDialect = getDbDialect()
-		println( "Dialect : \(fDialect)")
+		print( "Dialect : \(fDialect)")
 		
 	}
 	
